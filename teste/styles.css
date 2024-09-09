@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #27ae60; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branca */
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilo da imagem no cabeçalho */
+header .imagem {
+    max-width: 100px; /* Ajusta o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Garante que a imagem seja exibida como bloco */
+}
+
+/* Estilo do título */
+header h1 {
+    margin: 10px 0; /* Margem superior e inferior */
+    font-size: 2em; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto branca */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #27ae60; /* Define a cor verde para o título */
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+.contact-info, .app-rules {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #27ae60;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #2ecc71;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.tab-links {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.tab-links.active {
+    background-color: #27ae60;
+    color: #fff;
+}
+header .imagem {
+    width: 150px; /* Ajuste a largura da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Para centralizar a imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+.product-item img {
+    margin-left: 20px; /* Ajuste o valor para mover a imagem mais para a direita */
+}
+/* Adiciona um contêiner de grid para os produtos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste o tamanho mínimo das colunas conforme necessário */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Ajusta os itens do produto */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd; /* Borda para destacar os itens */
+    border-radius: 8px; /* Arredondamento das bordas */
+    overflow: hidden; /* Garante que a imagem e o texto não saiam do contêiner */
+    background-color: #fff; /* Cor de fundo para os itens */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar os itens */
+}
+
+/* Ajusta a imagem do produto */
+.product-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px; /* Arredondamento das bordas das imagens */
+}
+
+/* Adiciona estilo ao texto do produto */
+.product-item p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #333;
+}
+/* Adiciona estilo ao corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilo da imagem no cabeçalho */
+header .imagem {
+    max-width: 100px;
+    height: auto;
+    margin: 0;
+}
+
+/* Estilo do título */
+header h1 {
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #fff;
+    color: #27ae60;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo das seções */
+.section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section.hidden {
+    display: none;
+}
+
+.section.visible {
+    display: block;
+}
+
+/* Estilo das abas */
+.tab-links {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab-links.active {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+/* Estilo das imagens dos produtos */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo dos botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    color: #fff;
+    background-color: #27ae60;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #2ecc71;
+}
+
